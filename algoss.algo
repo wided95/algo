@@ -1,0 +1,31 @@
+ALGORITHM findsentence
+VAR
+    n, i, nbrmot, nbvoy: INTEGER;
+    charfin: CHAR := "1";
+    str: STRING;
+    espaces: INTEGER :=0;
+BEGIN
+    write("donnez une phrase terminée par un caractère ",charfin)  
+    read(str)
+    n:=0;
+    //compter les nombre de caracteres
+    FOR i FROM 0 TO i<str.length STEP step  DO
+        IF (str[i]<>".") THEN
+            n:=n+1;
+        END_IF
+    END_FOR
+    // compter le nombres des mots
+    FOR i FROM 0 TO i<str.length STEP step  DO
+    if(str[i]==" ")
+    espaces=espaces+1;
+    END_FOR
+    nbvoy:=0;
+    FOR i FROM 0 TO i<str.length STEP step  DO
+        IF (str[i] in ['a','e','i','y','o','u']) THEN
+        nbvoy:=nbvoy+1;
+        END_IF
+    END_FOR
+    write (n)
+    write (espaces)
+    write(nbvoy)
+END
