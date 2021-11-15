@@ -1,0 +1,7 @@
+PROCEDURE insertion_sort(arr: ARRAY_OF INTEGER;)
+VAR
+    i:integer;
+    FOR i FROM min TO max STEP step  DO
+        set_instructions
+    END_FOR
+END
